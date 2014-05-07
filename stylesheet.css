@@ -1,3 +1,8 @@
+header {
+	postion: absolute;
+	left: 100px;
+	top: 40px;
+}
 h1 {
 	color: #000;
 	font-family: 'Codystar', cursive;
@@ -29,7 +34,7 @@ ul li:before {
 	max-width: 600px;
 	position: relative;
 	left: 100px;
-	top: 30px;
+	top: 20px;
 }
 .social {
 	float: right;
