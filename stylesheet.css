@@ -8,9 +8,12 @@ h2 {
 }
 p{
 	font-family: 'Raleway', sans-serif;
+	line-height: 125%;
 }
 ul{
     list-style: none;
+    font-family: 'Raleway', sans-serif;
+	line-height: 125%;
 }
  
 ul li:before {
