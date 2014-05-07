@@ -1,6 +1,7 @@
 h1 {
 	color: #000;
 	font-family: 'Codystar', cursive;
+	font-size: 90px;
 }
 h2 {
 	font-family: 'Raleway', sans-serif;
@@ -26,7 +27,7 @@ ul li:before {
 	max-width: 600px;
 	position: relative;
 	left: 40px;
-	top: 120px;
+	top: 100px;
 }
 .social {
 	float: right;
