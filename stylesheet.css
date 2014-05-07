@@ -22,4 +22,10 @@ ul li:before {
     font-size: 1.2em;
     
 }
+.bio {
+	max-width: 600px;
+	position: relative;
+	left: 40px;
+	top: 200px;
+}
 .social {}
