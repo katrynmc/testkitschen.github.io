@@ -3,9 +3,12 @@ h1 {
 	font-family: 'Codystar', cursive;
 }
 h2 {
+	font-family: 'Raleway', sans-serif;
 
 }
-p{}
+p{
+	font-family: 'Raleway', sans-serif;
+}
 ul{
     list-style: none;
 }
@@ -14,6 +17,6 @@ ul li:before {
     color: #000;
     content: "\2192";
     font-size: 1.2em;
-    font-weight: bold;
+    
 }
 .social {}
