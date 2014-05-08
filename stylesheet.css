@@ -85,7 +85,9 @@ button {
 }
 img {
 	padding: 10px 20px;
-	position: relative;	
+	position: relative;
+	max-width: 100%;
+	height: auto;	
 	
 }
 .studio {
@@ -145,5 +147,57 @@ ul li:before {
 }
 li {
 	line-height: 150%;
+}
+
+/*----------Responsive styles*/
+@media (max-width: 600px) {
+	h1 {
+		font-size: 30px;
+		line-height: 130%;
+		letter-spacing:2px; 
+	}
+	h2 {
+		font-size: 16px;
+	}
+	.colorbar {
+		width: 20px;
+	}
+	.social {
+		float: right;
+		position: relative;
+		top: -1280px;
+		left: -80px;
+		padding-left: 40px;	
+}
+button {
+	font-size: 16px;
+}
+img {
+	padding: 5px 10px;
+	
+	
+}
+.dog {
+	float: right;
+	position: relative;
+	left: 50px;
+	top: -30px;
+	max-width: 100px;
+	height: auto;
+}
+.caption {
+	font-size: 14px;
+	position: relative;
+
+
+}
+.bio {
+	position: relative;
+	left: 20px;
+	top: -1300px;
+	max-width: 250px;
+
+
+}
 }
 
