@@ -22,12 +22,12 @@ ul{
     list-style: none;
     font-family: 'Raleway', sans-serif;
 	line-height: 150%;
-	margin: -20px;
+	margin: 0 0 0 -40px;
 }
  
 ul li:before {
     color: #000;
-    content: "\2192, &nbsp;";
+    content: "\2192 ";
     font-size: 1.2em;
     
 }
