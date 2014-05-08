@@ -1,14 +1,16 @@
 header {
+	
+	background-color: #e8e1c9;
+}
+h1 {
+	color: #393e92;
+	font-family: 'Codystar', cursive;
+	font-size: 70px;
+	line-height: 130%;
+	letter-spacing:8px;
 	position: relative;
 	left: 100px;
 	top: 40px;
-}
-h1 {
-	color: #000;
-	font-family: 'Codystar', cursive;
-	font-size: 90px;
-	line-height: 130%;
-	letter-spacing:5px;
 }
 h2 {
 	font-family: 'Raleway', sans-serif;
@@ -39,4 +41,7 @@ ul li:before {
 }
 .social {
 	float: right;
+}
+.circle {
+	float:right;
 }
