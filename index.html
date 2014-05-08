@@ -5,16 +5,63 @@
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-	<script></script>
+	<script src="/jquery.js"></script>
+	<script>// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type an adjective',
+	'Type a noun'
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	}
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
+
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span><span class="fill">'+answers[2]+'</span>.');
+  //and then hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();</script>
 	</head>
 <body>
+	<div class="colorbar"> </div>
 <header>
-	<div class="circle"><img src="cowboy.PNG"></div>
 	<h1>Katryn <br />
 	McIntosh</h1>
 </header>
 
 <div class="social">
+	<img src="cowboy.PNG">
+	<div class="caption">My dog Cowboy!</div>
+	<a href="mailto:katryn.mcintosh@gmail.com"><button>Contact me</button></a>
 <h2>I &#x2764; sharing</h2>
 <ul>
 	<li>on <a href="http://twitter.com/testkitschen">Twitter </a></li>
@@ -27,17 +74,17 @@
 	<li>on <a href="http://www.facebook.com/katryn.mcintosh">Facebook</a></li>
 </ul>
 </div>
+
 <div class="bio">	
-<p>Katryn McIntosh is an artist and digital strategist living in Providence, RI. She develops systems, in both her artwork and her career, that integrate disparate parts to produce a faceted yet cohesive whole. Technology and textiles remain her preferred mediums, but her body of work is more readily defined by a consistent approach than a particular product.</p>
-
+	<div class="slider-button">
+<button>Previous</button><button>Next</button></div>
+<p>Katryn McIntosh is an artist and digital strategist living in Providence, RI. She develops systems, in both her artwork and her career, that integrate disparate parts to produce a faceted yet cohesive whole. Technology and textiles remain her preferred mediums, but her body of work is more readily defined by a consistent approach than a particular product.</p><span class="portrait"><img src="myface.jpg"></span>
 <p>Katryn received her BFA in painting from the Rhode Island School of Design in 2007. While at RISD, she participated in the European Honors program – a year of independent study in Rome, Italy. Before focusing on technology, Katryn pursued a brief career in the fashion industry that enriched her sense of color and streamlined her approach to production and business.</p>
-
-<img src="myface.jpg">
 
 <p>She is also particularly passionate about working with organizations that encourage young women who have an interest in leadership or the STEM fields. In early April 2014, she volunteered for New England Give Camp. In collaboration with three other technology professionals, she built a new Web site for Girls, Inc of Greater Lowell over the course of a weekend. She continues to work with them on the design of their Web site and communication materials.</p>
 
 <p>Outside of the studio, her loves include reading, Minecraft, and spending time with her dog Cowboy / her sugar gliders Flower and Coyote.</p></div>
-
+<div class="studio"><img src="studio.jpg"><div class="caption">My new studio!</div></div>
 
 </body>
 </html>
