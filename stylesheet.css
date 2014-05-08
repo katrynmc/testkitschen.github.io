@@ -14,6 +14,24 @@ header {
 	width: 110%;
 	}
 /* ----------Medium Section Blocks */
+.slider {
+  width: 400px; height: 300px;
+  overflow: hidden;
+}
+ .slider > ul {
+    /* styled by JS to match the added width and height of all <li>’s */
+    position: relative;
+    -webkit-transition: 0.5s left;
+    -moz-transition: 0.5s left;
+    -ms-transition: 0.5s left;
+    -o-transition: 0.5s left;
+    list-style: none;
+    margin: 0 auto; padding: 0;
+  }
+    .slider > ul > li {
+      float: left;
+      width: 400px; height: 300px;
+    }
 .bio {
 	max-width: 600px;
 	position: relative;
@@ -125,7 +143,7 @@ a {
 	color: white;
 
 }
-ul{
+ul.links{
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -137,7 +155,7 @@ ul{
 	margin-top: 10px;
 }
  
-ul li:before {
+ul.links li:before {
     color: #fff;
     content: "\2192 ";
     font-size: 1.2em;
@@ -150,7 +168,24 @@ li {
 }
 
 /*----------Responsive styles*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+	.bio {
+		max-width: 450px;
+		position: relative;
+		left: -20px;
+	}
+	h1 {
+		font-size: 45px;
+	}
+	.studio {
+		margin: 0 auto;
+		text-align: center;
+}
+.social {
+	top: -1375px;
+}
+}
+@media (max-width: 500px) {
 	h1 {
 		font-size: 30px;
 		line-height: 130%;
@@ -160,20 +195,22 @@ li {
 		font-size: 16px;
 	}
 	.colorbar {
-		width: 20px;
+		position: relative;
+		left:0px;
+		width: 30px;
 	}
 	.social {
 		float: right;
 		position: relative;
 		top: -1280px;
-		left: -80px;
+		left: -70px;
 		padding-left: 40px;	
-}
-button {
-	font-size: 16px;
-}
-img {
-	padding: 5px 10px;
+	}
+	button {
+		font-size: 16px;
+	}
+	img {
+		padding: 5px 10px;
 	
 	
 }
@@ -195,9 +232,22 @@ img {
 	position: relative;
 	left: 20px;
 	top: -1300px;
-	max-width: 250px;
+	margin: 0 auto;
+	max-width: 310px;
+	padding: 500px 15px 80px 15px;;
 
 
+}
+.studio {
+	margin: 0 auto;
+	text-align: center;
+}
+.portrait {
+	padding: 10px;
+	
+
+	margin-bottom: 20px;
+	
 }
 }
 
